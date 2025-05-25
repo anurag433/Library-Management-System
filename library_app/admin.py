@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Book, BorrowRequest
+from .models import Book, Member , IssuedBook
 
 admin.site.register(Book)
-admin.site.register(BorrowRequest)
+admin.site.register(Member)
+admin.site.register(IssuedBook)
