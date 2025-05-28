@@ -7,6 +7,7 @@ class Book(models.Model):
     author = models.CharField(max_length=100)
     edition = models.IntegerField()
     available = models.BooleanField(default=True)
+    cover_image = models.ImageField(upload_to='book_covers/', blank=True , null= True)
 
 class Member(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE) 
