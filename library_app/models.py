@@ -18,3 +18,4 @@ class IssuedBook(models.Model):
     member = models.ForeignKey(Member,on_delete=models.CASCADE)
     issued_date = models.DateField(auto_now_add=True)
     return_date = models.DateField()
+    returned = models.BooleanField(default=False) 
