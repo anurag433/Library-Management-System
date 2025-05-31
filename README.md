@@ -15,6 +15,7 @@ This project supports user registration, login, book management, and book issuin
 - 📦 **Issue Book (Only Once Per Book Until Returned)**
 - 📅 **Track Issue Date and Return Date**
 - 🧾 **View Issued Books (Own or All for Admin)**
+- 🧾 **View Overdue Books (Own or All for Admin)**
 - 🧠 **Role-Based Access Control**
 
 ---
