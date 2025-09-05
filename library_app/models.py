@@ -9,6 +9,8 @@ class Book(models.Model):
     available = models.BooleanField(default=True)
     cover_image = models.ImageField(upload_to='book_covers/', blank=True , null= True)
 
+    
+
 class Member(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE) 
     join_date = models.DateField(auto_now_add=True)

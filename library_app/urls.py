@@ -7,6 +7,7 @@ router = DefaultRouter()
 router.register('books' ,BookViewSet)
 router.register('member' ,MemberViewSet)
 router.register('issued' ,IssuedBookViewSet)
+router.register('return', IssuedBookViewSet, basename='return-book')
 
 
 urlpatterns = [
