@@ -20,12 +20,15 @@ from rest_framework.authtoken.views import obtain_auth_token
 from user.views import RegisterView 
 from django.conf.urls.static import static
 from django.conf import settings
-
+from django.http import HttpResponse
+def home(request):
+    return HttpResponse("📚 Library Management API is running 🚀")
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('library_app.urls')),
     path('api/register/', RegisterView.as_view()),   
     path('api/login/', obtain_auth_token),
+    path('', home),
     
 
 ]
